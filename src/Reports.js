@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+import { db, auth } from './firebase'; // Make sure this path is correct
 function Reports() {
   const [expenses, setExpenses] = useState([]);
 
@@ -28,3 +30,4 @@ function Reports() {
     </div>
   );
 }
+export default Reports;

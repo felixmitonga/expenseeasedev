@@ -1,4 +1,9 @@
-import { db, auth } from './firebase';
+
+import { useState } from 'react';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
+import { db, auth } from './firebase'; // Make sure this path is correct
 
 function AddExpense() {
   const [expense, setExpense] = useState({
@@ -27,3 +32,4 @@ function AddExpense() {
     </form>
   );
 }
+export default AddExpense;
