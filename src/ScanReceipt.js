@@ -22,3 +22,5 @@ function ScanReceipt() {
     </div>
   );
 }
+
+export default ScanReceipt;
